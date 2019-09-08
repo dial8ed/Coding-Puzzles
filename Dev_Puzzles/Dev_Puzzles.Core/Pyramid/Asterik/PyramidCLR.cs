@@ -7,7 +7,7 @@ namespace Dev_Puzzles.Core.Pyramid.Asterik
 {
     public class PyramidCLR : OutputObject, IPrintPyramid
     {
-        public void PrintPyramid1(int levels)
+        public void PrintPyramid(int levels)
         {
             var j = 0;
             while (j < levels)
@@ -19,7 +19,7 @@ namespace Dev_Puzzles.Core.Pyramid.Asterik
             }
         }
 
-        public void PrintPyramid1_180(int levels)
+        public void PrintPyramidRot180(int levels)
         {
             var j = levels;
 

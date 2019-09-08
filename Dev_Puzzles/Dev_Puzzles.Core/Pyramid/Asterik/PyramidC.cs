@@ -8,7 +8,7 @@ namespace Dev_Puzzles.Core.Pyramid.Asterik
 {
     public class PyramidC : OutputObject, IPrintPyramid
     {
-        public void PrintPyramid1(int levels)
+        public void PrintPyramid(int levels)
         {            
             // Top to Bottom
             for (int i = 0; i <= levels; i++)
@@ -25,7 +25,7 @@ namespace Dev_Puzzles.Core.Pyramid.Asterik
             }
         }
 
-        public void PrintPyramid1_180(int levels)
+        public void PrintPyramidRot180(int levels)
         {
             // Bottom to Top
             for (int i = levels; i > 0; i--)

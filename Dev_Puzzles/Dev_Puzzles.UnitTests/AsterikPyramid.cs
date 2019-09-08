@@ -26,7 +26,7 @@ namespace Tests
             sb.AppendLine("  ***");
             sb.AppendLine(" *****");
 
-            pC.PrintPyramid1(3);
+            pC.PrintPyramid(3);
 
             Assert.IsTrue(sb.ToString() == pC.OutputAdapter.Output.ToString());
             

@@ -6,6 +6,7 @@ namespace Dev_Puzzles.Core.Pyramid
    public class PyramidPrinter
     {
         private IOutputAdapter _outputAdapter;
+        private int _sleepTime = 2000;
 
         public PyramidPrinter(IOutputAdapter outputAdapter)
         {
@@ -18,23 +19,23 @@ namespace Dev_Puzzles.Core.Pyramid
             
             _outputAdapter.Clear();
             _outputAdapter.WriteLine($"Normal Orientation - {levels} levels.");
-            printer.PrintPyramid1(levels);
-            Thread.Sleep(5000);
+            printer.PrintPyramid(levels);
+            Thread.Sleep(_sleepTime);
 
             _outputAdapter.Clear();
             _outputAdapter.WriteLine($"Rotated 90 Degrees - {levels} levels.");
             printer.PrintPyramidRot90(levels);
-            Thread.Sleep(5000);
+            Thread.Sleep(_sleepTime);
 
             _outputAdapter.Clear();
             _outputAdapter.WriteLine($"Rotated 180 Degrees - {levels} levels.");
-            printer.PrintPyramid1_180(levels);
-            Thread.Sleep(5000);
+            printer.PrintPyramidRot180(levels);
+            Thread.Sleep(_sleepTime);
 
             _outputAdapter.Clear();
             _outputAdapter.WriteLine($"Rotated 270 Degrees - {levels} levels.");
             printer.PrintPyramidRot270(levels);
-            Thread.Sleep(5000);
+            Thread.Sleep(_sleepTime);
 
         }
 
